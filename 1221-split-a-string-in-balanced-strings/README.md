@@ -30,7 +30,7 @@ Note that s cannot be split into "RL", "RR", "RL", "LR", "LL", because the 2<sup
 <strong>Explanation:</strong> s can be split into "LLLLRRRR".
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp; </p>
 <p><strong>Constraints:</strong></p>
 
 <ul>

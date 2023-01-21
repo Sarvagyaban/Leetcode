@@ -5,13 +5,14 @@ class Solution {
         int count=0;
         int i=0;
         int j=0;
+        int su=0;
      for (i = 0; i < nums.length; i++) {
-         sum=0;
+         su=0;
     for (j = i; j < nums.length; j++)
     {
-        sum+=nums[j];
-        if(sum==k)
-            count++;
+      su+=nums[j];
+        if(su==k)  
+        { count++;}
     }
 }
         return count;

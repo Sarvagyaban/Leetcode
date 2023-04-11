@@ -3,7 +3,7 @@ class Solution {
         int m=arr1.length;
         int n=arr1[0].length;
         int [][] arr =new int[m][n]; 
-        if(arr[0][0]==1) return 0;
+        if(arr1[0][0]==1) return 0;
         for(int i=0;i<arr1[0].length;i++)
         {
          if(arr1[0][i]==1)

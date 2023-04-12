@@ -1,16 +1,18 @@
 class Solution {
     public int fib(int n) {
-        if(n<2)
-        return n;
-        else{
-        int arr[]=new int[n+1];
-        arr[0]=0;
-        arr[1]=1;
-        for(int i=2;i<=n;i++)
+        int a=0;
+        int b=1;
+        int sum=0;
+        if(n==0) return a;
+        if(n==1) return b;
+        
+        for(int i=1;i<n;i++)
         {
-            arr[i]=arr[i-1]+arr[i-2];
+            sum=a+b;
+            a=b;
+            b=sum;
         }
-        return arr[n];
-        }
+        return b;
     }
+    
 }

@@ -2,6 +2,7 @@ class Solution {
     public int lengthOfLastWord(String s) 
     {
         String arr[]=s.trim().split("\s+");
-        return arr[arr.length-1].length();
+        int n=arr.length;
+        return arr[n-1].length();
     }
 }

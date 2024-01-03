@@ -1,12 +1,15 @@
 class Solution {
     public double average(int[] salary) 
     {
-     Arrays.sort(salary);
+        double min=Double.MAX_VALUE;
+        double max=Double.MIN_VALUE;
         double sum=0;
-        for(int i=1;i<salary.length-1;i++)
+        for(int i=0;i<salary.length;i++)
         {
+            min=Math.min(min,salary[i]);
+            max=Math.max(max,salary[i]);
             sum+=salary[i];
         }
-        return sum/(salary.length-2);
+        return (sum-min-max)/(salary.length-2);
     }
 }

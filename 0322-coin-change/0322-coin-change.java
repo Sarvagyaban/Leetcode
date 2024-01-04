@@ -3,7 +3,7 @@ class Solution {
     {
      int arr[]=new int[amount+1];
         Arrays.fill(arr,amount+1);
-        arr[0]=0;
+       arr[0]=0;
         for(int coin:coins)
         {
             for(int i=coin;i<=amount;i++)

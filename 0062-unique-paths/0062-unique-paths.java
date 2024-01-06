@@ -1,7 +1,7 @@
 class Solution {
     public int uniquePaths(int m, int n) 
     {
-     int [][] arr =new int[m][n];    
+        int [][] arr =new int[m][n];    
         for(int i=0;i<arr[0].length;i++)
         {
             arr[0][i]=1;

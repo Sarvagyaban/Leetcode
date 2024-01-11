@@ -1,8 +1,8 @@
 class Solution {
     public int minPathSum(int[][] arr) 
     {
-int n = arr.length;
- int m = arr[0].length;
+        int n = arr.length;
+        int m = arr[0].length;
     int[][] dp = new int[n][m];
     for(int i=dp.length-1;i>=0;i--)
     {

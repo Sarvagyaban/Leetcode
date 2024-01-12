@@ -1,19 +1,13 @@
-class Solution {
-    public boolean halvesAreAlike(String s) 
-    {
-     int l=s.length();
-    s=s.toLowerCase(); 
-     int c=0, c1=0;
-        for(int i=0;i<l/2;i++)
-        {
-         if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u')
-             c++;   
-        }
-        for(int i=l/2;i<l;i++)
-        {
-            if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u')
-            c1++;
-        }
-        return (c1==c)? true: false;
-    }
-}
+ class Solution {
+	   public boolean halvesAreAlike(String s) {
+			return numberOfVowels(s.substring(0,s.length()/2)) == numberOfVowels(s.substring(s.length()/2));
+	   }
+
+		public int numberOfVowels(String str) {
+			int num = 0;
+			for (char c : str.toCharArray()) {
+				if (c == 65 || c == 69 || c == 73 || c == 79 || c == 85 || c == 97 || c == 101 || c == 105 || c == 111 || c == 117)
+					num++;
+			}
+			return num;
+		}}

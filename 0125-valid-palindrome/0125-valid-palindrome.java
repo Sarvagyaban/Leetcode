@@ -3,8 +3,7 @@ class Solution {
     {
     String str="";
     s=s.toLowerCase();
-    s=s.trim();
-    s =  s.replaceAll("[^a-zA-Z0-9]", "");
+    s =  s.replaceAll("[^a-z0-9]", "");
     for (int i=0; i<s.length(); i++)
       {
         str= s.charAt(i) +str;

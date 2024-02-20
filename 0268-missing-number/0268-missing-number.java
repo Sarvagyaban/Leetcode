@@ -1,13 +1,9 @@
 class Solution {
-    public int missingNumber(int[] nums) 
+    public int missingNumber(int[] nums)
     {
-    Arrays.sort(nums);
-    int ans=0;
-    for(int i=0;i<=nums.length-1;i++)
-    {
-if(nums[i]==ans)
-ans++;
-    }
-return ans;
+    int n=nums.length,totalsum=n*(n+1)/2; //sum of first n natural numbers
+        for(int i:nums)
+            totalsum-=i;
+        return totalsum;    
     }
 }

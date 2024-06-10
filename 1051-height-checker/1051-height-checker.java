@@ -1,11 +1,7 @@
 class Solution {
     public int heightChecker(int[] a) 
     {
-    int b [] = new int[a.length];
-        for(int i=0;i<a.length;i++)
-        {
-            b[i]=a[i];
-        }
+        int[] b = a.clone();
         Arrays.sort(b);
         int count=0;
         for(int i=0;i<a.length;i++)

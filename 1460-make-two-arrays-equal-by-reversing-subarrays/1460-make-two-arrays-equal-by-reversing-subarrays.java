@@ -3,11 +3,7 @@ class Solution {
     {
      Arrays.sort(arr);
         Arrays.sort(nums);
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]!=nums[i])
-                return false;
-        }
-       return true; 
+        
+        return Arrays.equals(arr, nums);
     }
 }
